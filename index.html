@@ -86,7 +86,13 @@
       <button>Trigger a Global Error</button>
     </section>
   </main>
-
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      window.TrackJS && TrackJS.install({ 
+        token: "ba72d1a610da49a581c803bd9464d10d"
+        // for more configuration options, see https://docs.trackjs.com
+      });
+    </script>
   <script>
     class DemoError extends Error {
       constructor(message) {
@@ -199,13 +205,6 @@
     });
     errorBtns[14].addEventListener('click', () => {
       nonexistentFunction();   // Fires window.onerror
-    });
-  </script>
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-  <script>
-    window.TrackJS && TrackJS.install({ 
-      token: "ba72d1a610da49a581c803bd9464d10d"
-      // for more configuration options, see https://docs.trackjs.com
     });
   </script>
 </body>
