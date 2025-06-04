@@ -87,13 +87,13 @@
     </section>
   </main>
 
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-    <script>
-      window.TrackJS && TrackJS.install({ 
-        token: "ba72d1a610da49a581c803bd9464d10d"
-        // for more configuration options, see https://docs.trackjs.com
-      });
-    </script>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+  window.TrackJS && TrackJS.install({ 
+    token: "60f55a728a4c4e16b5519c664d83ece0"
+    // for more configuration options, see https://docs.trackjs.com
+  });
+</script>
   <script>
 
     class TestError extends Error {
@@ -200,6 +200,7 @@
         console.log("\n ERROR TRIGGERED \n",error);
       }
     });
+  TrackJS.track('Testing TrackJS!');
   </script>
 </body>
 
