@@ -110,22 +110,22 @@
         console.error(err);
         output.textContent = 'err';
       } finally{
-        console.log('calc attempted');
+        console.log('Calculation attempted');
       }
     });
 
     let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
     let clickCount = 0;
     const user = {
-      name: 'Richard',
+      name: 'George',
       age: 19,
-      hobbies: ['gaming', 'listening to music']
+      hobbies: ['gaming', 'music', 'gym']
     };
 
     const tabl = [
-      {uid: 0, name: 'Richard', major: 'Computer Science'},
-      {uid: 1, name: 'Paul', major: 'Computer Science'},
-      {uid: 2, name: 'Zachary', major: 'Math'}
+      {uid: 0, name: 'George', major: 'Computer Science'},
+      {uid: 1, name: 'Ali', major: 'Computer Science'},
+      {uid: 2, name: 'Cody', major: 'Theater'}
     ];
 
     function demo1(){
@@ -135,8 +135,7 @@
     function demo2(){
       console.trace('Trace Demo');
     }
-    // Start your code here
-    // You may move this JS to another file if you wish
+
     errorBtns[0].addEventListener('click', e => {
       console.log("Console Log Demo");
     });
