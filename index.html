@@ -194,9 +194,9 @@
 
     errorBtns[14].addEventListener('click', () => {
       try{
-      throw new TestError('global error test');
+      throw new TestError('Global Error Test');
       } catch (error) {
-        console.error('error button:', error);
+        console.error('Error button:', error);
         console.log("\n ERROR TRIGGERED \n",error);
       }
     });
